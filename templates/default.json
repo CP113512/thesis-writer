@@ -1,0 +1,120 @@
+{
+  "id": "default",
+  "name": "郑州升达经贸管理学院",
+  "school": "郑州升达经贸管理学院",
+  "isBuiltin": true,
+  "config": {
+    "page": {
+      "size": "A4",
+      "margin": {
+        "top": 2.5,
+        "bottom": 2.5,
+        "left": 3,
+        "right": 2.5
+      },
+      "headerHeight": 1.5,
+      "footerHeight": 1.5
+    },
+    "fonts": {
+      "title": {
+        "family": "黑体",
+        "size": 16,
+        "bold": true
+      },
+      "subtitle": {
+        "family": "宋体",
+        "size": 12
+      },
+      "heading1": {
+        "family": "黑体",
+        "size": 16,
+        "bold": true
+      },
+      "heading2": {
+        "family": "黑体",
+        "size": 15,
+        "bold": true
+      },
+      "heading3": {
+        "family": "黑体",
+        "size": 14,
+        "bold": true
+      },
+      "heading4": {
+        "family": "黑体",
+        "size": 12,
+        "bold": true
+      },
+      "body": {
+        "family": "宋体",
+        "size": 12
+      },
+      "bodyEn": {
+        "family": "Times New Roman",
+        "size": 12
+      },
+      "caption": {
+        "family": "宋体",
+        "size": 10.5
+      },
+      "captionEn": {
+        "family": "Times New Roman",
+        "size": 10.5
+      },
+      "footnote": {
+        "family": "宋体",
+        "size": 9
+      },
+      "reference": {
+        "family": "宋体",
+        "size": 10.5
+      },
+      "referenceEn": {
+        "family": "Times New Roman",
+        "size": 10.5
+      }
+    },
+    "paragraph": {
+      "lineHeight": 1.5,
+      "paragraphSpacing": 0,
+      "firstLineIndent": 2,
+      "alignment": "justify"
+    },
+    "chapter": {
+      "numbering": "第N章",
+      "separator": " ",
+      "titleFormat": "{number}{separator}{title}",
+      "alignment": "left"
+    },
+    "figure": {
+      "numbering": "{chapter}-{number}",
+      "captionPosition": "below",
+      "captionFormat": "图{number} {caption}"
+    },
+    "table": {
+      "numbering": "{chapter}-{number}",
+      "captionPosition": "above",
+      "captionFormat": "表{number} {caption}"
+    },
+    "equation": {
+      "numbering": "({chapter}-{number})",
+      "position": "right"
+    },
+    "reference": {
+      "style": "GB/T-7714",
+      "order": "appearance",
+      "hangingIndent": true
+    },
+    "header": {
+      "content": "",
+      "oddPage": "",
+      "evenPage": ""
+    },
+    "footer": {
+      "showPageNumber": true,
+      "pageNumberFormat": "1",
+      "pageNumberPosition": "center",
+      "startFrom": 1
+    }
+  }
+}

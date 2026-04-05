@@ -1,0 +1,261 @@
+{
+  "name": "示例论文",
+  "templateId": "shengda",
+  "chapters": [
+    {
+      "id": "ch-abstract",
+      "parentId": null,
+      "title": "摘要",
+      "orderIndex": 0,
+      "level": 1,
+      "number": "",
+      "isFixed": true,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"摘要\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本文研究了基于深度学习的图像识别技术，提出了一种改进的卷积神经网络模型。该模型通过引入注意力机制和多尺度特征融合，有效提高了图像识别的准确率。实验结果表明，在ImageNet数据集上，本文方法的识别准确率达到95.2%，相比传统方法提升了3.5个百分点。\"}]}]}"
+    },
+    {
+      "id": "ch-abstract-en",
+      "parentId": null,
+      "title": "Abstract",
+      "orderIndex": 1,
+      "level": 1,
+      "number": "",
+      "isFixed": true,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"Abstract\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"This paper studies image recognition technology based on deep learning. An improved convolutional neural network model is proposed. Experimental results show that the recognition accuracy reaches 95.2% on the ImageNet dataset, which is 3.5 percentage points higher than traditional methods.\"}]}]}"
+    },
+    {
+      "id": "ch1",
+      "parentId": null,
+      "title": "绪论",
+      "orderIndex": 2,
+      "level": 1,
+      "number": "1",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"绪论\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本章介绍研究背景、研究意义和主要研究内容。\"}]}]}"
+    },
+    {
+      "id": "ch1-1",
+      "parentId": "ch1",
+      "title": "研究背景",
+      "orderIndex": 3,
+      "level": 2,
+      "number": "1.1",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"研究背景\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"随着人工智能技术的快速发展，深度学习在各个领域得到了广泛应用\"},{\"type\":\"citation\",\"attrs\":{\"referenceId\":\"ref-lecun2015\"}},{\"type\":\"text\",\"text\":\"。图像识别作为计算机视觉的核心任务，已经在自动驾驶、医疗诊断、安防监控等领域展现出巨大价值。\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"近年来，卷积神经网络（CNN）在图像识别任务中取得了突破性进展\"},{\"type\":\"citation\",\"attrs\":{\"referenceId\":\"ref-he2016\"}},{\"type\":\"text\",\"text\":\"。深度学习技术的发展为图像识别带来了新的机遇。\"}]}]}"
+    },
+    {
+      "id": "ch1-2",
+      "parentId": "ch1",
+      "title": "研究意义",
+      "orderIndex": 4,
+      "level": 2,
+      "number": "1.2",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"研究意义\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"提高图像识别的准确率和效率，对于推动智能系统的发展具有重要意义。\"}]}]}"
+    },
+    {
+      "id": "ch2",
+      "parentId": null,
+      "title": "相关工作",
+      "orderIndex": 5,
+      "level": 1,
+      "number": "2",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"相关工作\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本章介绍与本文研究相关的工作，包括卷积神经网络和注意力机制。\"}]}]}"
+    },
+    {
+      "id": "ch2-1",
+      "parentId": "ch2",
+      "title": "卷积神经网络",
+      "orderIndex": 6,
+      "level": 2,
+      "number": "2.1",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"卷积神经网络\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"卷积神经网络是一种专门用于处理网格状数据的深度学习模型，其核心组件包括卷积层、池化层和全连接层\"},{\"type\":\"citation\",\"attrs\":{\"referenceId\":\"ref-he2016\"}},{\"type\":\"text\",\"text\":\"。\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"如\"},{\"type\":\"tableRef\",\"attrs\":{\"tableAlt\":\"主流CNN模型性能对比\"}},{\"type\":\"text\",\"text\":\"所示，列出了主流CNN模型的性能对比。\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"方法\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"准确率\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"参数量\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"推理时间\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"VGG-16\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"89.5%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"138M\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"45ms\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"ResNet-50\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"92.1%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"25.6M\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"32ms\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本文方法\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"95.2%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"28.3M\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"28ms\"}]}]}]}]},{\"type\":\"tableCaption\",\"attrs\":{\"caption\":\"主流CNN模型性能对比\"}}]}"
+    },
+    {
+      "id": "ch2-2",
+      "parentId": "ch2",
+      "title": "注意力机制",
+      "orderIndex": 7,
+      "level": 2,
+      "number": "2.2",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"注意力机制\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"注意力机制能够让模型关注图像中的重要区域，忽略无关信息\"},{\"type\":\"citation\",\"attrs\":{\"referenceId\":\"ref-hu2018\"}},{\"type\":\"text\",\"text\":\"。注意力机制已成为提升模型性能的重要技术。\"}]}]}"
+    },
+    {
+      "id": "ch3",
+      "parentId": null,
+      "title": "方法",
+      "orderIndex": 8,
+      "level": 1,
+      "number": "3",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"方法\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本章详细介绍本文提出的方法。\"}]}]}"
+    },
+    {
+      "id": "ch3-1",
+      "parentId": "ch3",
+      "title": "网络架构设计",
+      "orderIndex": 9,
+      "level": 2,
+      "number": "3.1",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"网络架构设计\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本文提出了一种改进的网络架构，该架构融合了多尺度特征提取和注意力机制。网络主要由特征提取模块、注意力模块和分类模块组成。\"}]}]}"
+    },
+    {
+      "id": "ch3-1-1",
+      "parentId": "ch3-1",
+      "title": "特征提取模块",
+      "orderIndex": 10,
+      "level": 3,
+      "number": "3.1.1",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"特征提取模块\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"特征提取模块采用多分支结构，分别提取不同尺度的特征。每个分支使用不同大小的卷积核，以捕获不同感受野的特征信息。\"}]}]}"
+    },
+    {
+      "id": "ch3-1-2",
+      "parentId": "ch3-1",
+      "title": "注意力模块",
+      "orderIndex": 11,
+      "level": 3,
+      "number": "3.1.2",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"注意力模块\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"注意力模块采用通道注意力和空间注意力相结合的方式，对特征进行自适应加权。通道注意力关注\"什么\"是重要的，空间注意力关注\"哪里\"是重要的。\"}]}]}"
+    },
+    {
+      "id": "ch3-2",
+      "parentId": "ch3",
+      "title": "损失函数设计",
+      "orderIndex": 12,
+      "level": 2,
+      "number": "3.2",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"损失函数设计\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"我们设计了新的损失函数来优化模型训练，结合了交叉熵损失和对比损失，以提高模型的判别能力和泛化性能。\"}]}]}"
+    },
+    {
+      "id": "ch4",
+      "parentId": null,
+      "title": "实验",
+      "orderIndex": 13,
+      "level": 1,
+      "number": "4",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"实验\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本章介绍实验设置和实验结果。\"}]}]}"
+    },
+    {
+      "id": "ch4-1",
+      "parentId": "ch4",
+      "title": "数据集与实验设置",
+      "orderIndex": 14,
+      "level": 2,
+      "number": "4.1",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"数据集与实验设置\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"我们在多个公开数据集上进行了实验，包括ImageNet、CIFAR-10和CIFAR-100。如\"},{\"type\":\"tableRef\",\"attrs\":{\"tableAlt\":\"实验数据集统计信息\"}},{\"type\":\"text\",\"text\":\"所示，展示了数据集的详细信息。\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"数据集\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"类别数\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"训练集\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"测试集\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"ImageNet\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"1000\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"1.2M\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"50K\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"CIFAR-10\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"10\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"50K\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"10K\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"CIFAR-100\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"100\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"50K\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"10K\"}]}]}]}]},{\"type\":\"tableCaption\",\"attrs\":{\"caption\":\"实验数据集统计信息\"}}]}"
+    },
+    {
+      "id": "ch4-2",
+      "parentId": "ch4",
+      "title": "实验结果",
+      "orderIndex": 15,
+      "level": 2,
+      "number": "4.2",
+      "isFixed": false,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"实验结果\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"实验结果表明，本文方法在所有数据集上都取得了最优性能。如\"},{\"type\":\"tableRef\",\"attrs\":{\"tableAlt\":\"不同方法在各数据集上的准确率对比\"}},{\"type\":\"text\",\"text\":\"所示，展示了本文方法与其他先进方法的定量对比结果。\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"方法\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"ImageNet\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"CIFAR-10\"}]}]},{\"type\":\"tableHeader\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"CIFAR-100\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"ResNet-50\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"92.1%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"94.5%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"78.2%\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"SENet\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"93.5%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"95.2%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"79.8%\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本文方法\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"95.2%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"96.8%\"}]}]},{\"type\":\"tableCell\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"82.1%\"}]}]}]}]},{\"type\":\"tableCaption\",\"attrs\":{\"caption\":\"不同方法在各数据集上的准确率对比\"}}]}"
+    },
+    {
+      "id": "ch-conclusion",
+      "parentId": null,
+      "title": "结论",
+      "orderIndex": 16,
+      "level": 1,
+      "number": "",
+      "isFixed": true,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"结论\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"本文提出了一种基于深度学习的图像识别方法，通过引入注意力机制和多尺度特征融合，有效提高了图像识别的准确率。实验结果表明，本文方法在多个公开数据集上都取得了优异的性能。未来工作将继续探索更高效的网络架构和更先进的注意力机制。\"}]}]}"
+    },
+    {
+      "id": "ch-references",
+      "parentId": null,
+      "title": "参考文献",
+      "orderIndex": 17,
+      "level": 1,
+      "number": "",
+      "isFixed": true,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"参考文献\"}]}]}"
+    },
+    {
+      "id": "ch-acknowledgement",
+      "parentId": null,
+      "title": "致谢",
+      "orderIndex": 18,
+      "level": 1,
+      "number": "",
+      "isFixed": true,
+      "children": [],
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"致谢\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"感谢导师的悉心指导和实验室同学们的帮助，在研究过程中提供了宝贵的建议和支持。\"}]}]}"
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-lecun2015",
+      "type": "journal",
+      "key": "lecun2015",
+      "authors": [
+        {"lastName": "LeCun", "firstName": "Y."},
+        {"lastName": "Bengio", "firstName": "Y."},
+        {"lastName": "Hinton", "firstName": "G."}
+      ],
+      "title": "Deep learning",
+      "journal": "Nature",
+      "year": 2015,
+      "volume": "521",
+      "pages": "436-444"
+    },
+    {
+      "id": "ref-he2016",
+      "type": "conference",
+      "key": "he2016",
+      "authors": [
+        {"lastName": "He", "firstName": "K."},
+        {"lastName": "Zhang", "firstName": "X."},
+        {"lastName": "Ren", "firstName": "S."},
+        {"lastName": "Sun", "firstName": "J."}
+      ],
+      "title": "Deep residual learning for image recognition",
+      "journal": "CVPR",
+      "year": 2016,
+      "pages": "770-778"
+    },
+    {
+      "id": "ref-hu2018",
+      "type": "conference",
+      "key": "hu2018",
+      "authors": [
+        {"lastName": "Hu", "firstName": "J."},
+        {"lastName": "Shen", "firstName": "L."},
+        {"lastName": "Sun", "firstName": "G."}
+      ],
+      "title": "Squeeze-and-excitation networks",
+      "journal": "CVPR",
+      "year": 2018,
+      "pages": "7132-7141"
+    }
+  ]
+}

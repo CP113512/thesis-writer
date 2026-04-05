@@ -1,0 +1,81 @@
+{
+  "name": "thesis-writer",
+  "productName": "无格式论文写作器",
+  "description": "让本科生专注于内容，无需关心格式的毕业论文写作工具",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "tsc -b && vite build",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite\" \"npm run build:electron && electron .\"",
+    "electron:build": "npm run build && npm run build:electron && electron-builder",
+    "test": "node test-automation.js",
+    "test:watch": "nodemon test-automation.js"
+  },
+  "dependencies": {
+    "@tiptap/core": "^2.2.0",
+    "@tiptap/extension-image": "^2.2.0",
+    "@tiptap/extension-placeholder": "^2.2.0",
+    "@tiptap/extension-table": "^2.2.0",
+    "@tiptap/extension-table-cell": "^2.2.0",
+    "@tiptap/extension-table-header": "^2.2.0",
+    "@tiptap/extension-table-row": "^2.2.0",
+    "@tiptap/pm": "^2.2.0",
+    "@tiptap/react": "^2.2.0",
+    "@tiptap/starter-kit": "^2.2.0",
+    "docx": "^8.5.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-icons": "^5.0.0",
+    "sql.js": "^1.9.0",
+    "uuid": "^9.0.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^24.12.0",
+    "@types/react": "^19.2.4",
+    "@types/react-dom": "^19.2.3",
+    "@types/sql.js": "^1.4.11",
+    "@types/uuid": "^9.0.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^8.2.0",
+    "electron": "^28.3.3",
+    "electron-builder": "^24.9.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.0",
+    "vite": "^8.0.1",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.thesis-writer.app",
+    "productName": "无格式论文写作器",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "resources/icons/icon.icns"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "resources/icons/icon.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "resources/icons"
+    }
+  }
+}

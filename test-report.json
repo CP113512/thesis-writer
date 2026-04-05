@@ -1,0 +1,104 @@
+{
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "warnings": 0,
+    "duration": 1295
+  },
+  "tests": [
+    {
+      "name": "TypeScript 编译",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.171Z"
+    },
+    {
+      "name": "导出服务逻辑",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.171Z"
+    },
+    {
+      "name": "项目存储逻辑",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.172Z"
+    },
+    {
+      "name": "数据库服务逻辑",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.172Z"
+    },
+    {
+      "name": "编辑器扩展",
+      "passed": true,
+      "details": "找到 3 个扩展",
+      "time": "2026-04-03T02:34:48.172Z"
+    },
+    {
+      "name": "数据库表创建",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.192Z"
+    },
+    {
+      "name": "数据库插入查询",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.193Z"
+    },
+    {
+      "name": "数据库更新",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.193Z"
+    },
+    {
+      "name": "数据库删除",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.194Z"
+    },
+    {
+      "name": "模板 default.json",
+      "passed": true,
+      "details": "",
+      "time": "2026-04-03T02:34:48.195Z"
+    },
+    {
+      "name": "章节编号",
+      "passed": true,
+      "details": "有编号的章节数: 1",
+      "time": "2026-04-03T02:34:48.195Z"
+    },
+    {
+      "name": "图片引用节点",
+      "passed": true,
+      "details": "找到 1 个",
+      "time": "2026-04-03T02:34:48.195Z"
+    },
+    {
+      "name": "图片节点",
+      "passed": true,
+      "details": "找到 1 个",
+      "time": "2026-04-03T02:34:48.195Z"
+    },
+    {
+      "name": "文献引用节点",
+      "passed": true,
+      "details": "找到 1 个",
+      "time": "2026-04-03T02:34:48.196Z"
+    },
+    {
+      "name": "参考文献数据",
+      "passed": true,
+      "details": "共 1 篇",
+      "time": "2026-04-03T02:34:48.196Z"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "timestamp": "2026-04-03T02:34:48.196Z"
+}

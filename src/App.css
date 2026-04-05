@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f5f5f5;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 顶部菜单栏 */
+.app-header {
+  height: 52px;
+  background: #fff;
+  border-bottom: 1px solid #e1e4e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  flex-shrink: 0;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #24292e;
+  transition: all 0.15s;
+}
+
+.header-btn:hover:not(:disabled) {
+  background: #f1f3f5;
+}
+
+.header-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.header-btn.primary {
+  background: #0366d6;
+  color: #fff;
+}
+
+.header-btn.primary:hover {
+  background: #0257b3;
+}
+
+.app-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #24292e;
+}
+
+.status-text {
+  font-size: 13px;
+  color: #586069;
+}
+
+.unsaved-dot {
+  color: #f59e0b;
+  margin-left: 4px;
+}
+
+.saving-text {
+  color: #3b82f6;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+/* 主内容区 */
+.app-main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* 拖拽分隔条 */
+.resize-handle {
+  width: 5px;
+  background: #e1e4e8;
+  cursor: col-resize;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.resize-handle:hover {
+  background: #0366d6;
+}
+
+/* 状态栏 */
+.app-footer {
+  height: 24px;
+  background: #f6f8fa;
+  border-top: 1px solid #e1e4e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 11px;
+  color: #6c757d;
+  flex-shrink: 0;
+}
+
+.unsaved {
+  color: #f59e0b;
+}
+
+/* 对话框 */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.dialog h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #24292e;
+}
+
+.dialog input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.dialog input:focus {
+  border-color: #0366d6;
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+}
+
+.dialog-hint {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 8px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.dialog-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dialog-actions button:not(.primary) {
+  background: #f6f8fa;
+  color: #24292e;
+}
+
+.dialog-actions button:not(.primary):hover {
+  background: #e1e4e8;
+}
+
+.dialog-actions button.primary {
+  background: #0366d6;
+  color: #fff;
+}
+
+.dialog-actions button.primary:hover {
+  background: #0257b3;
+}
+
+/* 表格尺寸输入 */
+.table-size-input {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.table-size-input .input-group {
+  flex: 1;
+}
+
+.table-size-input label {
+  display: block;
+  font-size: 13px;
+  color: #586069;
+  margin-bottom: 6px;
+}
+
+.table-size-input input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.table-size-input input:focus {
+  border-color: #0366d6;
+}
+
+/* 新建章节对话框 */
+.new-chapter-dialog {
+  width: 480px;
+}
+
+.new-chapter-dialog .form-group {
+  margin-bottom: 20px;
+}
+
+.new-chapter-dialog .form-group label {
+  display: block;
+  font-size: 13px;
+  color: #586069;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.new-chapter-dialog .level-options {
+  display: flex;
+  gap: 12px;
+}
+
+.new-chapter-dialog .level-option {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border: 2px solid #e1e4e8;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.new-chapter-dialog .level-option:hover {
+  border-color: #0366d6;
+  background: #f6fbff;
+}
+
+.new-chapter-dialog .level-option.active {
+  border-color: #0366d6;
+  background: #e6f2ff;
+}
+
+.new-chapter-dialog .level-badge {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e1e4e8;
+  color: #586069;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.new-chapter-dialog .level-option.active .level-badge {
+  background: #0366d6;
+  color: #fff;
+}
+
+.new-chapter-dialog .level-name {
+  font-size: 13px;
+  color: #586069;
+}
+
+.new-chapter-dialog .level-option.active .level-name {
+  color: #0366d6;
+  font-weight: 500;
+}
+
+.dialog-actions button.primary:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
