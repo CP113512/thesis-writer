@@ -13,6 +13,10 @@
     "preview": "vite preview",
     "electron:dev": "concurrently \"vite\" \"npm run build:electron && electron .\"",
     "electron:build": "npm run build && npm run build:electron && electron-builder",
+    "electron:build:all": "npm run build && npm run build:electron && electron-builder -mwl",
+    "electron:build:mac": "npm run build && npm run build:electron && electron-builder --mac",
+    "electron:build:win": "npm run build && npm run build:electron && electron-builder --win",
+    "electron:build:linux": "npm run build && npm run build:electron && electron-builder --linux",
     "test": "node test-automation.js",
     "test:watch": "nodemon test-automation.js"
   },
